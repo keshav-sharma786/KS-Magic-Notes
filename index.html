@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keshav Sharma Magic Notes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="notes.avif">
+    <!-- pasting the link of the bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body style="background-color: rgb(34, 34, 34); color: aliceblue;">
+    <!-- first of building the navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-dark custom-navbar">
+      <div class="container-fluid navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">KS Magic Notes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              id="searchTxt"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- making a div and giving it a container class of bootstrap -->
+    <!-- my-3 means giving margin 3 from the top i.e y axis -->
+    <div class="container my-3">
+      <h1>Welcome To KS Magic Notes</h1>
+      <!-- inserting the card bootstrap -->
+      <div class="card bg-primary">
+        <div class="card-body">
+          <h5 class="card-title">Add a note</h5>
+          <!-- text Area -->
+          <div class="mb-3">
+            <textarea
+              class="form-control navbar-dark bg-dark text-area"
+              id="addTxt"
+              id="exampleFormControlTextarea1"
+              rows="10"
+            ></textarea>
+          </div>
+          <button class="btn btn-danger" id="addBtn">Add Note</button>
+        </div>
+      </div>
+      <!-- displaying the notes inside div container only -->
+      <h1>Your Notes</h1>
+      <hr />
+      <div id="notes" class="row container-fluid">
+        <!-- container-fluid class will consume the full width -->
+        <!-- Again pasting the bootstrap card again -->
+      </div>
+    </div>
+    <!-- pasting the link of the script bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
